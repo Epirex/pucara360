@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Pucara 360</title>
+			<meta name="description" content="Creado por Esteban Guzzo" />
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="ThemePunch" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CArchivo:600&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="js/rbtools.min.js"></script>
+							<script src="js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body style="margin: 0px;">
+		
+
+			<!-- START Pucara 360 REVOLUTION SLIDER 6.6.14 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_30_1_wrapper" data-alias="pucara360" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;">
+				<rs-module id="rev_slider_30_1" style="" data-version="6.6.14">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-30" data-title="Inicio" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Diseno-sin-titulo-6.png" alt="" title="Diseño sin título (6)" width="1920" height="1080" class="rev-slidebg tp-rs-img" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-30-slide-30-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:124px;"
+								data-text="w:normal;"
+								data-dim="w:558px;h:100px;"
+								data-frame_0="sX:0.9;sY:0.9;"
+								data-frame_1="e:power2.inOut;st:1490;sp:1000;sR:1490;"
+								data-frame_999="o:0;st:w;sR:6510;"
+								style="z-index:8;"
+							><img src="assets/pucarasinmontana.png" alt="" class="tp-rs-img" width="955" height="171" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:246px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:100px;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:1500;sp:2500;sR:1500;"
+								data-frame_999="o:0;st:w;sR:5000;"
+								style="z-index:9;"
+							><img src="assets/360.png" alt="" class="tp-rs-img" width="412" height="150" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-2" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:40px;y:122px;"
+								data-text="w:normal;"
+								data-dim="w:107px;h:100px;"
+								data-frame_0="y:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1980;sp:1200;sR:1980;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:5820;"
+								data-loop_0="y:-7px;"
+								data-loop_999="y:7px;sp:6000;e:sine.inOut;yym:t;"
+								style="z-index:10;"
+							><img src="assets/pucaramontana2.png" alt="" class="tp-rs-img" width="188" height="176" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:500px;y:836px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:8000;"
+								style="z-index:18;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:1000px;y:836px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:8000;"
+								style="z-index:14;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:500px;y:400px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:1500;sp:1000;sR:1500;"
+								data-frame_999="o:0;st:w;sR:6500;"
+								style="z-index:15;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:500px;y:545px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:970;sp:1000;sR:970;"
+								data-frame_999="o:0;st:w;sR:7030;"
+								style="z-index:16;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:500px;y:690px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:520;sp:1000;sR:520;"
+								data-frame_999="o:0;st:w;sR:7480;"
+								style="z-index:17;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:1000px;y:400px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:1510;sp:1000;sR:1510;"
+								data-frame_999="o:0;st:w;sR:6490;"
+								style="z-index:11;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:1000px;y:545px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:980;sp:1000;sR:980;"
+								data-frame_999="o:0;st:w;sR:7020;"
+								style="z-index:12;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:1000px;y:690px;"
+								data-text="w:normal;"
+								data-dim="w:409px;h:124px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:510;sp:1000;sR:510;"
+								data-frame_999="o:0;st:w;sR:7490;"
+								style="z-index:13;"
+							><img src="assets/pucaraboton3.png" alt="" class="tp-rs-img" width="365" height="111" data-no-retina> 
+							</rs-layer><!--
+
+							--><a
+								id="slider-30-slide-30-layer-11" 
+								class="rs-layer"
+								href="plaza-principal/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:614px;y:418px;"
+								data-text="w:normal;s:35;l:43;fw:600;a:center;"
+								data-frame_0="x:-100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1750;sp:1000;sR:1750;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6250;"
+								style="z-index:26;font-family:'Archivo';text-transform:uppercase;"
+							>PLaza<br />
+principal 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-12" 
+								class="rs-layer"
+								href="recintos1/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:555px;y:584px;"
+								data-text="w:normal;s:35;l:43;fw:600;"
+								data-frame_0="x:-100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1760;sp:1000;sR:1760;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6240;"
+								style="z-index:25;font-family:'Archivo';text-transform:uppercase;"
+							>Habitaciones 1 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-13" 
+								class="rs-layer"
+								href="recintos2/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:555px;y:728px;"
+								data-text="w:normal;s:35;l:43;fw:600;"
+								data-frame_0="x:-100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1770;sp:1000;sR:1770;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6230;"
+								style="z-index:24;font-family:'Archivo';text-transform:uppercase;"
+							>habitaciones 2 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-14" 
+								class="rs-layer"
+								href="recintos3/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:555px;y:876px;"
+								data-text="w:normal;s:35;l:43;fw:600;"
+								data-frame_0="x:-100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1770;sp:1000;sR:1770;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6230;"
+								style="z-index:23;font-family:'Archivo';text-transform:uppercase;"
+							>habitaciones 3 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-15" 
+								class="rs-layer"
+								href="almacenes/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:1090px;y:436px;"
+								data-text="w:normal;s:35;l:43;fw:600;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1770;sp:1000;sR:1770;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6230;"
+								style="z-index:22;font-family:'Archivo';text-transform:uppercase;"
+							>Almacenes 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-16" 
+								class="rs-layer"
+								href="puesto-defensa/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:1100px;y:562px;"
+								data-text="w:normal;s:35;l:43;fw:600;a:center;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1760;sp:1000;sR:1760;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6240;"
+								style="z-index:21;font-family:'Archivo';text-transform:uppercase;"
+							>Puesto de<br />
+defensa 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-17" 
+								class="rs-layer"
+								href="area-ceremonial1/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:1071px;y:708px;"
+								data-text="w:normal;s:35;l:43;fw:600;a:center;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1760;sp:1000;sR:1760;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6240;"
+								style="z-index:20;font-family:'Archivo';text-transform:uppercase;"
+							>area<br />
+ceremonial 1 
+							</a><!--
+
+							--><a
+								id="slider-30-slide-30-layer-18" 
+								class="rs-layer"
+								href="area-ceremonial2/slider.html" target="_self"
+								data-type="text"
+								data-color="#292823"
+								data-rsp_ch="on"
+								data-xy="x:1071px;y:854px;"
+								data-text="w:normal;s:35;l:43;fw:600;a:center;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1760;sp:1000;sR:1760;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:6240;"
+								style="z-index:19;font-family:'Archivo';text-transform:uppercase;"
+							>Area<br />
+ceremonial 2 
+							</a><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-19" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-568px;y:712px;"
+								data-text="w:normal;"
+								data-dim="w:891px;h:879px;"
+								data-frame_0="y:200%;sX:2;sY:2;o:1;rX:-20deg;rY:-20deg;"
+								data-frame_1="e:power3.out;st:1980;sp:1000;sR:1980;"
+								data-frame_999="o:0;st:w;sR:6020;"
+								style="z-index:6;"
+							><img src="assets/rocas2.png" alt="" class="tp-rs-img" width="1899" height="1873" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-30-slide-30-layer-20" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:709px;y:526px;"
+								data-text="w:normal;"
+								data-dim="w:2395px;h:1207px;"
+								data-frame_0="y:200%;sX:2;sY:2;o:1;rX:-20deg;rY:-20deg;"
+								data-frame_1="e:power3.out;st:1980;sp:1000;sR:1980;"
+								data-frame_999="o:0;st:w;sR:6020;"
+								style="z-index:7;"
+							><img src="assets/rocas1.png" alt="" class="tp-rs-img" width="3661" height="1845" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider301"] = {once: RS_MODULES.modules["revslider301"]!==undefined ? RS_MODULES.modules["revslider301"].once : undefined, init:function() {
+						window.revapi30 = window.revapi30===undefined || window.revapi30===null || window.revapi30.length===0  ? document.getElementById("rev_slider_30_1") : window.revapi30;
+						if(window.revapi30 === null || window.revapi30 === undefined || window.revapi30.length==0) { window.revapi30initTry = window.revapi30initTry ===undefined ? 0 : window.revapi30initTry+1; if (window.revapi30initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider301"].init()}); return;}
+						window.revapi30 = jQuery(window.revapi30);
+						if(window.revapi30.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_30_1"); return;}
+						revapi30.revolutionInit({
+								revapi:"revapi30",
+								DPR:"dpr",
+								sliderLayout:"fullscreen",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:1920,
+								gridheight:1080,
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"1080,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+		</body>
+				</html>
+		
